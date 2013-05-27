@@ -54,8 +54,8 @@ static int col_x, col_y;
 }
 
 +(void) newCollectable {
-	col_x = MIN_X + arc4random_uniform(MAX_X - MIN_X + 1);
-	col_y = MIN_Y + arc4random_uniform(MAX_Y - MIN_Y + 1);
+	col_x = MIN_X + 1 + arc4random_uniform(MAX_X - (MIN_X + 1));
+	col_y = MIN_Y + 1 + arc4random_uniform(MAX_Y - (MIN_Y + 1));
 	
 	setPos(col_x, col_y);
 	printf("+");
