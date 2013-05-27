@@ -34,7 +34,7 @@ void init() {
 }
 
 
-double delay = 0.2;
+double delay = 0.15;
 
 int main(int argc, char *arv[]) {
 
