@@ -34,7 +34,7 @@ void init() {
 }
 
 
-double delay = 0.25;
+double delay = 0.2;
 
 int main(int argc, char *arv[]) {
 
@@ -79,7 +79,8 @@ int main(int argc, char *arv[]) {
 	    setPos(0,0);
 	    if(headX == [Scene getColX] && headY == [Scene getColY]) {
 		[snake addLength];
-		delay -= 0.01;
+		[snake addLength];
+		delay -= 0.03;
 		[Scene newCollectable];
 	    }
 	}
